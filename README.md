@@ -1,20 +1,51 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Aegis Omni-Dashboard
 
-# Run and deploy your AI Studio app
+A privacy-preserving portfolio dashboard for Real World Assets (RWA) on the Rialo Network. 
 
-This contains everything you need to run your app locally.
+Aegis Core provides an institutional-grade, zero-knowledge interface for tracking and managing unified liquidity, private credit, tokenized real estate, and fixed yield investments natively across chains.
 
-View your app in AI Studio: https://ai.studio/apps/37338ac3-6ff4-4fba-a9c8-06d1068abd1e
+## Features
 
-## Run Locally
+- **Portfolio Analytics:** Track real-time net worth, blended APY, and active asset positions with interactive charts.
+- **ZK Privacy Mode:** 1-click client-side obfuscation for masking sensitive portfolio values and transaction amounts.
+- **Omni-Router:** Interface for simulating cross-chain routing models (e.g., Ethereum stablecoins into Rialo RWA pools).
+- **Reactive Automation:** Configurable rules engine for conditional treasury reallocation and yield management.
+- **Responsive Design:** Fully adaptive, fluid interface with mobile-friendly navigation.
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+- **Animations:** [Motion for React](https://motion.dev/)
+- **Charts:** [Recharts](https://recharts.org/)
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have Node.js (v18.17.0 or higher) installed on your local environment.
+
+### Installation
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## Project Structure
+
+- `/app`: Next.js App Router endpoints and global layout/styles.
+- `/components`: Reusable UI components, including the Dashboard features, standard shadcn UI parts, and core layout pieces.
+- `/lib`: Utility functions and static mock data sources.
+
+## License
+
+MIT
