@@ -27,11 +27,9 @@ export function WalletProvider({ children }: { children: ReactNode }) {
     if (saved === 'true') {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsConnected(true);
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setAddress('0x8F9a...2B4c');
     }
     if (savedPrivacy === 'true') {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setPrivacyMode(true);
     }
   }, []);
